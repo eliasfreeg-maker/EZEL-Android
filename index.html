@@ -15,9 +15,11 @@ font-family:Arial,sans-serif;
 text-align:center;
 color:#fff0cf;
 background:
-radial-gradient(circle at 15% 10%,#a75d1d 0,#572507 25%,transparent 48%),
-radial-gradient(circle at 90% 35%,#6b300c 0,transparent 35%),
-linear-gradient(150deg,#321305,#160703 70%);
+radial-gradient(circle at 50% 0%,#8a4818 0,#3a1707 32%,transparent 58%),
+radial-gradient(circle at 10% 45%,#5e290b 0,transparent 35%),
+radial-gradient(circle at 90% 70%,#6b300c 0,transparent 35%),
+linear-gradient(160deg,#2b1005,#120502 72%);
+background-attachment:fixed;
 min-height:100vh;
 }
 
@@ -38,31 +40,33 @@ font-size:14px;
 }
 
 .hero{
-padding:45px 15px 35px;
+padding:70px 15px 48px;
+min-height:410px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background:radial-gradient(ellipse at center,#8b461d55 0,transparent 65%);
+border-bottom:1px solid #7d481f;
 }
 
 .logo{
-font-size:64px;
+font-size:82px;
 font-weight:900;
-letter-spacing:8px;
-color:#ffc75c;
-text-shadow:0 0 15px #e58b2c,0 0 35px #9c4b0c;
+letter-spacing:10px;
+color:#ffd06a;
+text-shadow:
+0 0 8px #fff2b855,
+0 0 22px #e58b2c,
+0 0 50px #9c4b0c;
+margin-bottom:8px;
 }
 
 .tag{
-font-size:18px;
+font-size:19px;
 color:#f0ce91;
-margin-top:5px;
-}
-
-.heroimg{
-width:220px;
-height:155px;
-object-fit:cover;
-margin:22px 0 12px;
-border-radius:20px;
-border:2px solid #d69a3d;
-box-shadow:0 10px 30px #0009,0 0 25px #c76d1755;
+margin:4px 0 18px;
+letter-spacing:2px;
 }
 
 h1{
@@ -88,7 +92,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:7px;
 max-width:800px;
-margin:10px auto 35px;
+margin:20px auto 35px;
 padding:10px;
 }
 
@@ -162,10 +166,10 @@ border-top:1px solid #714019;
 }
 
 @media(min-width:700px){
-.heroimg{width:350px;height:230px}
 .gallery{grid-template-columns:repeat(3,1fr)}
 .gallery img{height:300px}
-.logo{font-size:78px}
+.logo{font-size:105px}
+.hero{min-height:470px}
 }
 </style>
 </head>
@@ -187,15 +191,9 @@ border-top:1px solid #714019;
 تصميم • طباعة • هدايا
 </div>
 
-<img class="heroimg"
-src="IMG-20260901-WA0020.jpg">
+<h1>كل فكرة... تصبح قطعة مميزة</h1>
 
-<h1>
-كل فكرة... تصبح قطعة مميزة
-</h1>
-
-<a class="wa"
-href="https://wa.me/963938411128">
+<a class="wa" href="https://wa.me/963938411128">
 تواصل معنا الآن<br>
 0938411128
 </a>
@@ -231,19 +229,12 @@ href="https://wa.me/963938411128">
 </h2>
 
 <div class="gallery">
-
 <img src="IMG-20260901-WA0020.jpg">
-
 <img src="IMG-20260901-WA0022.jpg">
-
 <img src="IMG-20260901-WA0072.jpg">
-
 <img src="IMG-20260901-WA0078.jpg">
-
 <img src="IMG-20260902-WA0026.jpg">
-
 <img src="IMG-20260902-WA0053.jpg">
-
 </div>
 
 <section class="about" id="about">
@@ -258,18 +249,10 @@ href="https://wa.me/963938411128">
 </section>
 
 <footer>
-
-<b>من تواصي اليوم... لهدية أجمل غداً</b>
-<br>
-
-📞 هاتف وواتساب: 0938411128
-<br>
-
-EZEL © 2026
-<br>
-
+<b>من تواصي اليوم... لهدية أجمل غداً</b><br>
+📞 هاتف وواتساب: 0938411128<br>
+EZEL © 2026<br>
 Handmade with Love
-
 </footer>
 
 </body>
