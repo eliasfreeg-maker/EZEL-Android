@@ -1,0 +1,30 @@
+body{
+  margin:0;
+  background:#111;
+  color:white;
+  font-family:Arial,sans-serif;
+  text-align:center;
+}
+
+header{
+  background:#1b1b1b;
+  padding:25px;
+}
+
+h1{
+  font-size:42px;
+  margin:5px;
+}
+
+main{
+  padding:35px 20px;
+}
+
+button{
+  background:#25D366;
+  color:white;
+  border:0;
+  padding:15px 30px;
+  border-radius:12px;
+  font-size:18px;
+}
