@@ -6,235 +6,136 @@
 <title>EZEL | معرض الأعمال</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-color:#fff;
-text-align:center;
-min-height:100vh;
-background:
-radial-gradient(circle at 20% 10%,rgba(255,190,80,.28),transparent 25%),
-radial-gradient(circle at 85% 30%,rgba(255,170,50,.20),transparent 30%),
-linear-gradient(135deg,#2a1205,#6b3512,#3b1b08);
-background-attachment:fixed;
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:#fff4d6;
+  text-align:center;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(255,190,90,.22),transparent 23%),
+    radial-gradient(circle at 85% 25%,rgba(255,150,30,.18),transparent 28%),
+    linear-gradient(180deg,#2b1205 0%,#5a280b 35%,#3b1705 70%,#1f0d03 100%);
+  background-attachment:fixed;
 }
 
-header{
-padding:28px 15px;
-background:rgba(45,20,6,.70);
-border-bottom:1px solid #b8792d;
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  padding:12px 14px;
+  background:rgba(35,14,3,.92);
+  border-bottom:1px solid #b87827;
+  backdrop-filter:blur(8px);
 }
 
-.logo{
-font-size:42px;
-font-weight:bold;
-letter-spacing:5px;
-color:#f5c36a;
-text-shadow:0 0 18px rgba(255,185,70,.45);
+.nav{
+  max-width:1000px;
+  margin:auto;
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 
-header p{
-color:#efd19b;
+.nav a{
+  text-decoration:none;
+  color:#ffe0a0;
+  padding:9px 15px;
+  border-radius:22px;
+  font-size:14px;
+}
+
+.nav a.active{
+  background:linear-gradient(180deg,#c47a19,#8b4b0d);
+  color:white;
 }
 
 .hero{
-padding:50px 15px 35px;
+  padding:45px 18px 28px;
 }
 
-.hero h1{
-font-size:36px;
-margin:0 0 12px;
-color:#fff2d0;
-text-shadow:0 2px 12px #000;
+.logo{
+  font-size:56px;
+  font-weight:bold;
+  letter-spacing:5px;
+  color:#f6c766;
+  text-shadow:
+    0 2px 0 #7b420b,
+    0 0 18px rgba(255,191,80,.28);
 }
 
-.hero p{
-color:#f0d7aa;
-font-size:18px;
+.sub{
+  margin-top:10px;
+  color:#f2d39b;
+  font-size:19px;
+}
+
+.slogan{
+  margin-top:28px;
+  font-size:27px;
+  color:#fff0c9;
+  text-shadow:0 2px 10px #000;
 }
 
 .whatsapp{
-display:inline-block;
-margin-top:18px;
-padding:15px 28px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:12px;
-font-weight:bold;
-font-size:18px;
-box-shadow:0 5px 20px rgba(0,0,0,.35);
+  display:inline-block;
+  margin-top:22px;
+  padding:15px 28px;
+  background:linear-gradient(180deg,#22db68,#0cad42);
+  color:white;
+  text-decoration:none;
+  border-radius:14px;
+  font-size:18px;
+  font-weight:bold;
+  box-shadow:0 0 20px rgba(20,230,100,.25);
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  padding:30px 16px;
+  max-width:900px;
+  margin:auto;
+}
+
+.service{
+  padding:15px 8px;
+  color:#f5d59a;
+}
+
+.icon{
+  width:58px;
+  height:58px;
+  margin:0 auto 10px;
+  border:1px solid #d69231;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:27px;
+  background:rgba(74,32,7,.5);
+  box-shadow:0 0 14px rgba(255,175,50,.13);
+}
+
+.gallery-wrap{
+  padding:12px 14px 35px;
 }
 
 .gallery-title{
-margin-top:30px;
-font-size:30px;
-color:#ffd889;
-text-shadow:0 2px 10px #000;
+  font-size:34px;
+  margin:10px 0 25px;
+  color:#f7c96d;
+  text-shadow:0 2px 12px #000;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:12px;
-padding:15px;
-max-width:900px;
-margin:auto;
-}
-
-.gallery img{
-width:100%;
-height:230px;
-object-fit:cover;
-border-radius:14px;
-border:1px solid rgba(255,200,100,.45);
-box-shadow:0 6px 20px rgba(0,0,0,.45);
-background:#3b1b08;
-}
-
-footer{
-margin-top:35px;
-padding:28px 10px;
-background:rgba(35,14,4,.78);
-border-top:1px solid #a76b25;
-color:#e8c98e;
-line-height:1.9;
-}
-
-footer strong{
-color:#ffd889;
-font-size:20px;
-}
-
-@media(min-width:700px){
-.gallery{
-grid-template-columns:repeat(3,1fr);
-}
-.gallery img{
-height:300px;
-}
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="logo">EZEL</div>
-<p>تصميم • طباعة • هدايا</p>
-</header>
-
-<section class="hero">
-<h1>أعمال EZEL</h1>
-<p>معرض منتجاتنا وتصاميمنا</p>
-
-<a class="whatsapp" href="https://wa.me/963938411128">
-تواصل معنا عبر واتساب
-</a>
-</section>
-
-<h2 class="gallery-title">معرض الأعمال</h2>
-
-<div class="gallery">
-<img src="IMG-20260901-WA0020.jpg" alt="أعمال EZEL">
-<img src="IMG-20260901-WA0022.jpg" alt="أعمال EZEL">
-<img src="IMG-20260901-WA0072.jpg" alt="أعمال EZEL">
-<img src="IMG-20260901-WA0078.jpg" alt="أعمال EZEL">
-<img src="IMG-20260902-WA0026.jpg" alt="أعمال EZEL">
-<img src="IMG-20260902-WA0053.jpg" alt="أعمال EZEL">
-</div>
-
-<footer>
-<strong>EZEL © 2026</strong><br>
-هاتف وواتساب: 0938411128
-</footer>
-
-</body>
-</html>
-.whatsapp{
-display:inline-block;
-margin-top:15px;
-padding:14px 28px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-font-size:18px;
-}
-.gallery-title{
-margin-top:35px;
-font-size:28px;
-}
-.gallery{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:10px;
-padding:15px;
-max-width:900px;
-margin:auto;
-}
-.gallery img{
-width:100%;
-height:230px;
-object-fit:cover;
-border-radius:12px;
-background:#222;
-}
-footer{
-margin-top:35px;
-padding:25px 10px;
-background:#151515;
-color:#bbb;
-line-height:1.8;
-}
-@media(min-width:700px){
-.gallery{
-grid-template-columns:repeat(3,1fr);
-}
-.gallery img{
-height:300px;
-}
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="logo">EZEL</div>
-<p>تصميم • طباعة • هدايا</p>
-</header>
-
-<section class="hero">
-<h1>أعمال EZEL</h1>
-<p>معرض منتجاتنا وتصاميمنا</p>
-
-<a class="whatsapp"
-href="https://wa.me/963938411128">
-تواصل معنا عبر واتساب
-</a>
-</section>
-
-<h2 class="gallery-title">معرض الأعمال</h2>
-
-<div class="gallery">
-
-<img src="IMG-20260901-WA0020.jpg" alt="أعمال EZEL">
-<img src="IMG-20260901-WA0022.jpg" alt="أعمال EZEL">
-<img src="IMG-20260901-WA0072.jpg" alt="أعمال EZEL">
-<img src="IMG-20260901-WA0078.jpg" alt="أعمال EZEL">
-<img src="IMG-20260902-WA0026.jpg" alt="أعمال EZEL">
-<img src="IMG-20260902-WA0053.jpg" alt="أعمال EZEL">
-
-</div>
-
-<footer>
-<strong>EZEL © 2026</strong><br>
-هاتف وواتساب: 0938411128
-</footer>
-
-</body>
-</html>
+.gallery-title:before,
+.gallery-title:after{
+  content:"";
+  display:inline-block;
+  width:55px
