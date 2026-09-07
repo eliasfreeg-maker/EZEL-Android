@@ -2,140 +2,69 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EZEL | معرض الأعمال</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EZEL</title>
 <style>
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;text-align:center;color:#fff3d0;background:radial-gradient(circle at 20% 10%,#8b4b18 0,#4a2109 35%,#210c03 100%);min-height:100vh}
+nav{padding:14px 5px;background:#211008;border-bottom:1px solid #b8792d;position:sticky;top:0;z-index:5}
+nav a{color:#f6cf83;text-decoration:none;margin:0 8px;font-size:14px}
+.hero{padding:50px 15px 35px}
+.logo{font-size:58px;font-weight:bold;letter-spacing:6px;color:#ffc85c;text-shadow:0 0 18px #b96b18}
+.hero h1{font-size:26px;margin:20px 0 8px}
+.hero p{color:#e8c68e;font-size:18px}
+.wa{display:inline-block;margin:18px 0;padding:14px 25px;background:#20c961;color:white;text-decoration:none;border-radius:14px;font-weight:bold}
+.features{display:grid;grid-template-columns:repeat(4,1fr);max-width:850px;margin:auto;padding:20px 10px;gap:8px}
+.feature{font-size:13px;color:#f3d193}
+.circle{width:55px;height:55px;border:1px solid #d69536;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:25px}
+h2{font-size:32px;color:#ffd071;margin:35px 0 20px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px 15px;max-width:950px;margin:auto}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:14px;border:1px solid #b97927;box-shadow:0 5px 15px #180800}
+footer{margin-top:35px;padding:30px 10px;background:#1e0d06;border-top:1px solid #8d541c;color:#e5c185;line-height:2}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery img{height:300px}}
+</style>
+</head>
+<body>
 
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  color:#fff4d6;
-  text-align:center;
-  min-height:100vh;
-  background:
-    radial-gradient(circle at 15% 10%,rgba(255,190,90,.22),transparent 23%),
-    radial-gradient(circle at 85% 25%,rgba(255,150,30,.18),transparent 28%),
-    linear-gradient(180deg,#2b1205 0%,#5a280b 35%,#3b1705 70%,#1f0d03 100%);
-  background-attachment:fixed;
-}
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#gallery">معرض الأعمال</a>
+<a href="#about">من نحن</a>
+<a href="https://wa.me/963938411128">تواصل معنا</a>
+</nav>
 
-.topbar{
-  position:sticky;
-  top:0;
-  z-index:20;
-  padding:12px 14px;
-  background:rgba(35,14,3,.92);
-  border-bottom:1px solid #b87827;
-  backdrop-filter:blur(8px);
-}
+<section class="hero">
+<div class="logo">EZEL</div>
+<p>تصميم • طباعة • هدايا</p>
+<h1>كل فكرة... تصبح قطعة مميزة</h1>
+<a class="wa" href="https://wa.me/963938411128">تواصل معنا الآن<br>0938411128</a>
+</section>
 
-.nav{
-  max-width:1000px;
-  margin:auto;
-  display:flex;
-  gap:8px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
+<div class="features">
+<div class="feature"><div class="circle">🎁</div>لكل المناسبات</div>
+<div class="feature"><div class="circle">✦</div>تصاميم مميزة</div>
+<div class="feature"><div class="circle">★</div>جودة عالية</div>
+<div class="feature"><div class="circle">🚚</div>توصيل سريع</div>
+</div>
 
-.nav a{
-  text-decoration:none;
-  color:#ffe0a0;
-  padding:9px 15px;
-  border-radius:22px;
-  font-size:14px;
-}
+<h2 id="gallery">معرض الأعمال</h2>
 
-.nav a.active{
-  background:linear-gradient(180deg,#c47a19,#8b4b0d);
-  color:white;
-}
+<div class="gallery">
+<img src="IMG-20260901-WA0020.jpg">
+<img src="IMG-20260901-WA0022.jpg">
+<img src="IMG-20260901-WA0072.jpg">
+<img src="IMG-20260901-WA0078.jpg">
+<img src="IMG-20260902-WA0026.jpg">
+<img src="IMG-20260902-WA0053.jpg">
+</div>
 
-.hero{
-  padding:45px 18px 28px;
-}
+<footer id="about">
+<b>EZEL</b><br>
+من تواصي اليوم... لهدية أجمل غداً<br>
+📞 0938411128<br>
+واتساب: 0938411128<br>
+EZEL © 2026
+</footer>
 
-.logo{
-  font-size:56px;
-  font-weight:bold;
-  letter-spacing:5px;
-  color:#f6c766;
-  text-shadow:
-    0 2px 0 #7b420b,
-    0 0 18px rgba(255,191,80,.28);
-}
-
-.sub{
-  margin-top:10px;
-  color:#f2d39b;
-  font-size:19px;
-}
-
-.slogan{
-  margin-top:28px;
-  font-size:27px;
-  color:#fff0c9;
-  text-shadow:0 2px 10px #000;
-}
-
-.whatsapp{
-  display:inline-block;
-  margin-top:22px;
-  padding:15px 28px;
-  background:linear-gradient(180deg,#22db68,#0cad42);
-  color:white;
-  text-decoration:none;
-  border-radius:14px;
-  font-size:18px;
-  font-weight:bold;
-  box-shadow:0 0 20px rgba(20,230,100,.25);
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-  padding:30px 16px;
-  max-width:900px;
-  margin:auto;
-}
-
-.service{
-  padding:15px 8px;
-  color:#f5d59a;
-}
-
-.icon{
-  width:58px;
-  height:58px;
-  margin:0 auto 10px;
-  border:1px solid #d69231;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:27px;
-  background:rgba(74,32,7,.5);
-  box-shadow:0 0 14px rgba(255,175,50,.13);
-}
-
-.gallery-wrap{
-  padding:12px 14px 35px;
-}
-
-.gallery-title{
-  font-size:34px;
-  margin:10px 0 25px;
-  color:#f7c96d;
-  text-shadow:0 2px 12px #000;
-}
-
-.gallery-title:before,
-.gallery-title:after{
-  content:"";
-  display:inline-block;
-  width:55px
+</body>
+</html>
