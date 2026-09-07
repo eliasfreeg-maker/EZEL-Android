@@ -1,131 +1,63 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>EZEL</title>
 
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
+background:#0d1016;
+color:white;
 font-family:Arial,sans-serif;
 text-align:center;
-color:#fff0cf;
-background:
-radial-gradient(circle at 50% 0%,#8a4818 0,#3a1707 32%,transparent 58%),
-radial-gradient(circle at 10% 45%,#5e290b 0,transparent 35%),
-radial-gradient(circle at 90% 70%,#6b300c 0,transparent 35%),
-linear-gradient(160deg,#2b1005,#120502 72%);
-min-height:100vh;
 }
 
+/* القائمة */
 nav{
-position:sticky;
-top:0;
-z-index:10;
-padding:16px 5px;
-background:#190904ee;
-border-bottom:1px solid #b8782c;
+background:#160703;
+padding:14px 5px;
+border-bottom:1px solid #714019;
 }
 
 nav a{
-color:#f5cf83;
+color:#ffd271;
 text-decoration:none;
-margin:0 7px;
+margin:0 8px;
 font-size:14px;
 }
 
 /* صورة الغلاف */
 .cover{
+display:block;
 width:100%;
 height:auto;
-display:block;
 margin:0;
 padding:0;
 }
 
-.hero{
-padding:38px 15px 42px;
-}
-
-.logo{
-font-size:70px;
-font-weight:900;
-letter-spacing:9px;
-color:#ffd06a;
-text-shadow:
-0 0 8px #fff2b855,
-0 0 22px #e58b2c,
-0 0 50px #9c4b0c;
-}
-
-.tag{
-font-size:18px;
-color:#f0ce91;
-margin-top:6px;
-}
-
-h1{
-font-size:27px;
-margin:18px 0 8px;
-text-shadow:0 3px 10px #000;
-}
-
-.wa{
-display:inline-block;
-margin-top:15px;
-padding:13px 27px;
-border-radius:15px;
-background:#20c763;
-color:white;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 8px 20px #0007;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:7px;
-max-width:800px;
-margin:10px auto 35px;
-padding:10px;
-}
-
-.feature{
-font-size:12px;
-color:#f2d19a;
-}
-
-.circle{
-width:56px;
-height:56px;
-margin:0 auto 9px;
-border:1px solid #d99a3b;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:23px;
-background:#54250788;
-box-shadow:0 0 15px #b9681744;
-}
-
+/* عنوان معرض الأعمال */
 .title{
-font-size:32px;
+font-size:30px;
 color:#ffd271;
-margin:35px 0 25px;
+margin:14px 0 8px;
 text-shadow:0 3px 12px #000;
 }
 
+/* الصور */
 .gallery{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:12px;
-padding:10px 15px;
+gap:10px;
+padding:5px 10px 15px;
 max-width:950px;
 margin:auto;
 }
@@ -134,13 +66,14 @@ margin:auto;
 width:100%;
 height:230px;
 object-fit:cover;
-border-radius:17px;
+border-radius:15px;
 border:2px solid #a96b27;
 box-shadow:0 9px 24px #0009;
 }
 
+/* معلومات EZEL */
 .about{
-margin:45px 15px 0;
+margin:30px 15px 0;
 padding:25px 15px;
 border-top:1px solid #a96b27;
 }
@@ -156,6 +89,20 @@ color:#e8c58c;
 line-height:1.8;
 }
 
+/* واتساب */
+.wa{
+display:inline-block;
+margin:15px 0;
+padding:13px 27px;
+border-radius:15px;
+background:#20c763;
+color:white;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 8px 20px #0007;
+}
+
+/* أسفل الصفحة */
 footer{
 padding:27px 10px;
 background:#160703;
@@ -164,19 +111,22 @@ line-height:2;
 border-top:1px solid #714019;
 }
 
+/* الكمبيوتر */
 @media(min-width:700px){
+
 .gallery{
 grid-template-columns:repeat(3,1fr);
 }
+
 .gallery img{
 height:300px;
 }
-.logo{
-font-size:90px;
+
 }
-}
+
 </style>
 </head>
+
 
 <body>
 
@@ -187,55 +137,15 @@ font-size:90px;
 <a href="https://wa.me/963938411128">تواصل معنا</a>
 </nav>
 
-<!-- غلاف EZEL بعرض الشاشة -->
+
+<!-- صورة غلاف EZEL -->
 <img
 class="cover"
 src="file_00000000b468821087e922aa1ca4928f.png"
 alt="EZEL">
 
-<section class="hero">
 
-<div class="logo">EZEL</div>
-
-<div class="tag">
-تصميم • طباعة • هدايا
-</div>
-
-<h1>
-كل فكرة... تصبح قطعة مميزة
-</h1>
-
-<a class="wa"
-href="https://wa.me/963938411128">
-تواصل معنا الآن<br>
-0938411128
-</a>
-
-</section>
-
-<div class="features">
-
-<div class="feature">
-<div class="circle">🎁</div>
-لكل المناسبات
-</div>
-
-<div class="feature">
-<div class="circle">✦</div>
-تصاميم مميزة
-</div>
-
-<div class="feature">
-<div class="circle">★</div>
-جودة عالية
-</div>
-
-<div class="feature">
-<div class="circle">🚚</div>
-توصيل سريع
-</div>
-
-</div>
+<!-- الصور مباشرة تحت الغلاف -->
 
 <h2 class="title" id="gallery">
 ✦ معرض الأعمال ✦
@@ -243,19 +153,22 @@ href="https://wa.me/963938411128">
 
 <div class="gallery">
 
-<img src="IMG-20260901-WA0020.jpg">
+<img src="IMG-20260901-WA0020.jpg" alt="EZEL">
 
-<img src="IMG-20260901-WA0022.jpg">
+<img src="IMG-20260901-WA0022.jpg" alt="EZEL">
 
-<img src="IMG-20260901-WA0072.jpg">
+<img src="IMG-20260901-WA0072.jpg" alt="EZEL">
 
-<img src="IMG-20260901-WA0078.jpg">
+<img src="IMG-20260901-WA0078.jpg" alt="EZEL">
 
-<img src="IMG-20260902-WA0026.jpg">
+<img src="IMG-20260902-WA0026.jpg" alt="EZEL">
 
-<img src="IMG-20260902-WA0053.jpg">
+<img src="IMG-20260902-WA0053.jpg" alt="EZEL">
 
 </div>
+
+
+<!-- معلومات EZEL -->
 
 <section class="about" id="about">
 
@@ -263,20 +176,31 @@ href="https://wa.me/963938411128">
 
 <p>
 نحوّل أفكاركم إلى قطع مميزة<br>
-وهدايا مصممة بكل حب واهتمام.
+وهدايا مصممة بكل حب واهتمام
 </p>
 
+<a
+class="wa"
+href="https://wa.me/963938411128">
+تواصل معنا الآن<br>
+0938411128
+</a>
+
 </section>
+
 
 <footer>
 
 <b>من تواصي اليوم... لهدية أجمل غداً</b>
+
 <br>
 
 📞 هاتف وواتساب: 0938411128
+
 <br>
 
 EZEL © 2026
+
 <br>
 
 Handmade with Love
