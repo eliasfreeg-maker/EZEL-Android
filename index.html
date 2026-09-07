@@ -4,26 +4,172 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EZEL</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial;text-align:center;color:#fff3d0;background:radial-gradient(circle at 20% 10%,#8b4b18 0,#4a2109 35%,#210c03 100%);min-height:100vh}
-nav{padding:14px 5px;background:#211008;border-bottom:1px solid #b8792d;position:sticky;top:0;z-index:5}
-nav a{color:#f6cf83;text-decoration:none;margin:0 8px;font-size:14px}
-.hero{padding:50px 15px 35px}
-.logo{font-size:58px;font-weight:bold;letter-spacing:6px;color:#ffc85c;text-shadow:0 0 18px #b96b18}
-.hero h1{font-size:26px;margin:20px 0 8px}
-.hero p{color:#e8c68e;font-size:18px}
-.wa{display:inline-block;margin:18px 0;padding:14px 25px;background:#20c961;color:white;text-decoration:none;border-radius:14px;font-weight:bold}
-.features{display:grid;grid-template-columns:repeat(4,1fr);max-width:850px;margin:auto;padding:20px 10px;gap:8px}
-.feature{font-size:13px;color:#f3d193}
-.circle{width:55px;height:55px;border:1px solid #d69536;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:25px}
-h2{font-size:32px;color:#ffd071;margin:35px 0 20px}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px 15px;max-width:950px;margin:auto}
-.gallery img{width:100%;height:230px;object-fit:cover;border-radius:14px;border:1px solid #b97927;box-shadow:0 5px 15px #180800}
-footer{margin-top:35px;padding:30px 10px;background:#1e0d06;border-top:1px solid #8d541c;color:#e5c185;line-height:2}
-@media(min-width:700px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery img{height:300px}}
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+text-align:center;
+color:#fff0cf;
+background:
+radial-gradient(circle at 15% 10%,#a75d1d 0,#572507 25%,transparent 48%),
+radial-gradient(circle at 90% 35%,#6b300c 0,transparent 35%),
+linear-gradient(150deg,#321305,#160703 70%);
+min-height:100vh;
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:10;
+padding:16px 5px;
+background:#190904ee;
+border-bottom:1px solid #b8782c;
+}
+
+nav a{
+color:#f5cf83;
+text-decoration:none;
+margin:0 7px;
+font-size:14px;
+}
+
+.hero{
+padding:45px 15px 35px;
+}
+
+.logo{
+font-size:64px;
+font-weight:900;
+letter-spacing:8px;
+color:#ffc75c;
+text-shadow:0 0 15px #e58b2c,0 0 35px #9c4b0c;
+}
+
+.tag{
+font-size:18px;
+color:#f0ce91;
+margin-top:5px;
+}
+
+.heroimg{
+width:220px;
+height:155px;
+object-fit:cover;
+margin:22px 0 12px;
+border-radius:20px;
+border:2px solid #d69a3d;
+box-shadow:0 10px 30px #0009,0 0 25px #c76d1755;
+}
+
+h1{
+font-size:27px;
+margin:15px 0 8px;
+text-shadow:0 3px 10px #000;
+}
+
+.wa{
+display:inline-block;
+margin-top:15px;
+padding:13px 27px;
+border-radius:15px;
+background:#20c763;
+color:white;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 8px 20px #0007;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:7px;
+max-width:800px;
+margin:10px auto 35px;
+padding:10px;
+}
+
+.feature{
+font-size:12px;
+color:#f2d19a;
+}
+
+.circle{
+width:56px;
+height:56px;
+margin:0 auto 9px;
+border:1px solid #d99a3b;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:23px;
+background:#54250788;
+box-shadow:0 0 15px #b9681744;
+}
+
+.title{
+font-size:32px;
+color:#ffd271;
+margin:35px 0 25px;
+text-shadow:0 3px 12px #000;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+padding:10px 15px;
+max-width:950px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:17px;
+border:2px solid #a96b27;
+box-shadow:0 9px 24px #0009;
+}
+
+.about{
+margin:45px 15px 0;
+padding:25px 15px;
+border-top:1px solid #a96b27;
+}
+
+.about h2{
+font-size:36px;
+color:#ffd271;
+margin:5px;
+}
+
+.about p{
+color:#e8c58c;
+line-height:1.8;
+}
+
+footer{
+padding:27px 10px;
+background:#160703;
+color:#eacb94;
+line-height:2;
+border-top:1px solid #714019;
+}
+
+@media(min-width:700px){
+.heroimg{width:350px;height:230px}
+.gallery{grid-template-columns:repeat(3,1fr)}
+.gallery img{height:300px}
+.logo{font-size:78px}
+}
 </style>
 </head>
+
 <body>
 
 <nav>
@@ -34,36 +180,96 @@ footer{margin-top:35px;padding:30px 10px;background:#1e0d06;border-top:1px solid
 </nav>
 
 <section class="hero">
+
 <div class="logo">EZEL</div>
-<p>تصميم • طباعة • هدايا</p>
-<h1>كل فكرة... تصبح قطعة مميزة</h1>
-<a class="wa" href="https://wa.me/963938411128">تواصل معنا الآن<br>0938411128</a>
+
+<div class="tag">
+تصميم • طباعة • هدايا
+</div>
+
+<img class="heroimg"
+src="IMG-20260901-WA0020.jpg">
+
+<h1>
+كل فكرة... تصبح قطعة مميزة
+</h1>
+
+<a class="wa"
+href="https://wa.me/963938411128">
+تواصل معنا الآن<br>
+0938411128
+</a>
+
 </section>
 
 <div class="features">
-<div class="feature"><div class="circle">🎁</div>لكل المناسبات</div>
-<div class="feature"><div class="circle">✦</div>تصاميم مميزة</div>
-<div class="feature"><div class="circle">★</div>جودة عالية</div>
-<div class="feature"><div class="circle">🚚</div>توصيل سريع</div>
+
+<div class="feature">
+<div class="circle">🎁</div>
+لكل المناسبات
 </div>
 
-<h2 id="gallery">معرض الأعمال</h2>
+<div class="feature">
+<div class="circle">✦</div>
+تصاميم مميزة
+</div>
+
+<div class="feature">
+<div class="circle">★</div>
+جودة عالية
+</div>
+
+<div class="feature">
+<div class="circle">🚚</div>
+توصيل سريع
+</div>
+
+</div>
+
+<h2 class="title" id="gallery">
+✦ معرض الأعمال ✦
+</h2>
 
 <div class="gallery">
+
 <img src="IMG-20260901-WA0020.jpg">
+
 <img src="IMG-20260901-WA0022.jpg">
+
 <img src="IMG-20260901-WA0072.jpg">
+
 <img src="IMG-20260901-WA0078.jpg">
+
 <img src="IMG-20260902-WA0026.jpg">
+
 <img src="IMG-20260902-WA0053.jpg">
+
 </div>
 
-<footer id="about">
-<b>EZEL</b><br>
-من تواصي اليوم... لهدية أجمل غداً<br>
-📞 0938411128<br>
-واتساب: 0938411128<br>
+<section class="about" id="about">
+
+<h2>EZEL</h2>
+
+<p>
+نحوّل أفكاركم إلى قطع مميزة<br>
+وهدايا مصممة بكل حب واهتمام.
+</p>
+
+</section>
+
+<footer>
+
+<b>من تواصي اليوم... لهدية أجمل غداً</b>
+<br>
+
+📞 هاتف وواتساب: 0938411128
+<br>
+
 EZEL © 2026
+<br>
+
+Handmade with Love
+
 </footer>
 
 </body>
